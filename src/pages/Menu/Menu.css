@@ -1,0 +1,38 @@
+.menu {
+  min-height: 100vh;
+}
+.menu__background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding: 0 5vw;
+}
+.menu__background > img {
+  width: 20vw;
+  height: auto;
+}
+.menu__leftBranch {
+  transform: rotate(-15deg);
+}
+.menu__rightBranch {
+  transform: rotate(15deg);
+}
+.menu__content {
+  margin-top: 15vh;
+}
+
+.fullheight {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .menu__leftBranch {
+    display: none;
+  }
+  .menu__rightBranch {
+    display: none;
+  }
+  .menu__content {
+    margin-top: 25vh;
+  }
+}

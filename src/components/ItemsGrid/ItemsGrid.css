@@ -1,0 +1,15 @@
+.itemsGrid {
+  display: grid;
+  padding: 30vh auto;
+  padding: 100px 0 20vh;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 0.3fr));
+  background: white;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .itemsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+  }
+}

@@ -1,0 +1,33 @@
+.agendaItem {
+  // display: flex;
+  // flex-basis: 1;
+
+  // flex-grow: 3;
+  // width: 100%;
+
+  width: 18vw;
+  border-right: 1px solid
+    linear-gradient(
+      180deg,
+      rgba(100, 135, 129, 0) 0%,
+      rgba(100, 135, 129, 1) 50%,
+      rgba(100, 135, 129, 0) 100%
+    );
+
+  &__description {
+    font-family: "EB Garamond", serif;
+    color: var(--primary-colour);
+  }
+
+  &__time {
+    padding-top: 128px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .agendaItem {
+    &__time {
+      padding-top: 28px;
+    }
+  }
+}

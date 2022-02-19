@@ -1,0 +1,76 @@
+.text {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text--garamond {
+  font-family: "EB Garamond", serif;
+}
+
+.text--xxs {
+  font-size: 0.75rem;
+}
+.text--xs {
+  font-size: 0.85rem;
+}
+.text--sm {
+  font-size: 1.125rem;
+}
+.text--md {
+  font-size: 1.5rem;
+}
+.text--lg {
+  font-size: 2.25rem;
+}
+
+.text--thin {
+  font-weight: 100;
+}
+.text--light {
+  font-weight: 300;
+}
+.text--regular {
+  font-weight: 400;
+}
+.text--medium {
+  font-weight: 500;
+}
+.text--semibold {
+  font-weight: 800;
+}
+.text--bold {
+  font-weight: 900;
+}
+
+.text--off-white {
+  color: var(--off-white);
+}
+
+.text--primary-colour {
+  color: var(--primary-colour);
+}
+
+.text--secondary-colour {
+  color: var(--secondary-colour);
+}
+
+.text--medium-light-grey {
+  color: var(--medium-light-grey);
+}
+
+@media screen and (max-width: 450px) {
+  .text--xxs {
+    font-size: 0.75rem;
+  }
+  .text--xs {
+    font-size: 0.85rem;
+  }
+  .text--sm {
+    font-size: 1rem;
+  }
+  .text--md {
+    font-size: 1.25rem;
+  }
+  .text--lg {
+    font-size: 2.25rem;
+  }
+}

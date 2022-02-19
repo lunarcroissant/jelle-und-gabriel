@@ -1,0 +1,100 @@
+.btn {
+  all: unset;
+  cursor: pointer;
+  white-space: nowrap;
+  text-transform: uppercase;
+  transition: cubic-bezier(0.3, 0.4, 0.2, 0.4) all 400ms;
+
+  &-tertiary {
+    &:hover {
+      background: rgb(65, 46, 34);
+    }
+  }
+}
+
+// .button_outline {
+//   display: flex;
+//   // border-bottom: 50px solid transparent;
+//   border-left: 2px solid #333;
+//   border-right: 2px solid #333;
+//   border-top: 2px solid #333;
+//   background: #333;
+//   height: 0;
+//   width: 100px;
+//   // border-radius: inset(0% 45% 0% 45% round 10px);
+//   // -webkit-clip-path: inset(0% 45% 0% 45% round 10px);
+//   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+// }
+
+.btn-primary,
+.btn-primary-link {
+  padding: 1rem 5rem;
+  font-size: 1.25rem;
+  color: #f3f3f3;
+  font-weight: var(--font--regular);
+  background-image: linear-gradient(to right, #fff 0%, #668882 50%, #fff 100%);
+  background-size: 100% auto;
+  // height: 30px;
+  max-width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  // transition: cubic-bezier(0.3, 0.4, 0.2, 0.4) all 400ms;
+  overflow: hidden;
+
+  // border-bottom: 100px solid #333;
+  // border-left: 50px solid transparent;
+  // border-right: 50px solid transparent;
+  // height: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.btn-secondary {
+  padding: 1rem 5rem;
+  // width: 100%;
+  flex: 1;
+  border: 2px solid var(--primary-colour);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: var(--font--medium);
+  color: var(--primary-colour);
+  background: white;
+  // max-width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: cubic-bezier(0.3, 0.4, 0.2, 0.4) all 400ms;
+
+  &:hover {
+    background: var(--primary-colour);
+    color: white;
+  }
+}
+
+.btn-tertiary {
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #f3f3f3;
+  background: var(--secondary-colour);
+  font-weight: var(--font--light);
+  border-radius: 0.5rem;
+  max-width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: cubic-bezier(0.3, 0.4, 0.2, 0.4) all 400ms;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-primary,
+  .btn-primary-link,
+  .btn-secondary {
+    padding: 1rem 2rem;
+  }
+}

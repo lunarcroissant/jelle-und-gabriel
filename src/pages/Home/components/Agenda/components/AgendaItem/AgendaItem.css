@@ -1,0 +1,17 @@
+.agendaItem {
+  width: 18vw;
+  border-right: 1px solid linear-gradient(180deg, rgba(100, 135, 129, 0) 0%, #648781 50%, rgba(100, 135, 129, 0) 100%);
+}
+.agendaItem__description {
+  font-family: "EB Garamond", serif;
+  color: var(--primary-colour);
+}
+.agendaItem__time {
+  padding-top: 128px;
+}
+
+@media screen and (max-width: 1024px) {
+  .agendaItem__time {
+    padding-top: 28px;
+  }
+}

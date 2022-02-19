@@ -1,0 +1,18 @@
+footer {
+  background: var(--super-light-green);
+  z-index: 10;
+}
+
+.footer {
+  &__text {
+    font-family: "EB Garamond", serif;
+    color: #727c74;
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+  }
+}

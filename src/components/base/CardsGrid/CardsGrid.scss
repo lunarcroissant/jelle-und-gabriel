@@ -1,0 +1,42 @@
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 30vw 30vw;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 10;
+  // backdrop-filter: blur(1rem);
+
+  &:nth-of-type(odd) {
+    transform: translateY(10vh);
+  }
+}
+
+@media screen and (max-width: 1028px) {
+  .cardsGrid {
+    display: grid;
+    grid-template-columns: 80vw;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 10;
+    // backdrop-filter: blur(1rem);
+
+    &:nth-child(odd) {
+      transform: translateY(10vh);
+    }
+  }
+}
+
+// @media screen and (max-width: 1028px) {
+//   .cardsGrid {
+//     display: grid;
+//     grid-template-columns: 30vw 30vw;
+//     width: 100%;
+//     justify-content: space-around;
+//     z-index: 10;
+//     // backdrop-filter: blur(1rem);
+
+//     &:nth-child(odd) {
+//       transform: translateY(10vh);
+//     }
+//   }
+// }

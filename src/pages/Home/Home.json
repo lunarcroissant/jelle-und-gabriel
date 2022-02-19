@@ -1,0 +1,149 @@
+{
+  "hotels": [
+    {
+    "title": "Villa Mallorca",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, netus id tincidunt vitae. Tempor ullamcorper convallis non pharetra, aliquet felis ut varius. ",
+    "imageSource": "hotel-test.jpg",
+    "phoneNumber": "+33 5432 232324",
+    "email": null,
+    "priceIndication": "€€"
+  },
+  {
+    "title": "Villa Mallorca",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, netus id tincidunt vitae. Tempor ullamcorper convallis non pharetra, aliquet felis ut varius. ",
+    "imageSource": "hotel-test.jpg",
+    "phoneNumber": "+33 5432 232324",
+    "email": null,
+    "priceIndication": "€€"
+  },
+  {
+    "title": "Villa Mallorca",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, netus id tincidunt vitae. Tempor ullamcorper convallis non pharetra, aliquet felis ut varius. ",
+    "imageSource": "hotel-test.jpg",
+    "phoneNumber": "+33 5432 232324",
+    "email": null,
+    "priceIndication": "€€"
+  },
+  {
+    "title": "Villa Mallorca",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, netus id tincidunt vitae. Tempor ullamcorper convallis non pharetra, aliquet felis ut varius. ",
+    "imageSource": "hotel-test.jpg",
+    "phoneNumber": "+33 5432 232324",
+    "email": null,
+    "priceIndication": "€€"
+  },
+  {
+    "title": "Villa Mallorca",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, netus id tincidunt vitae. Tempor ullamcorper convallis non pharetra, aliquet felis ut varius. ",
+    "imageSource": "hotel-test.jpg",
+    "phoneNumber": "+33 5432 232324",
+    "email": null,
+    "priceIndication": "€€"
+  }
+  ],
+  "mapItems": [
+    {
+      "title": "Son Burguet",
+      "description": "Eine wunderschöne Finca, 13 km (20 min) von Palma entfernt inmitten der Serra de Tramuntana gelegen, 23km (30 min) bis zum Flughafen",
+      "address": "Carretera Palma Puigpunyent, km 10, 8, 07194 Puigpunyent, Balearic Islands, Spain"
+    },
+    {
+      "title": "Palma",
+      "description": "Eine wunderschöne Finca, 13 km (20 min) von Palma entfernt inmitten der Serra de Tramuntana gelegen, 23km (30 min) bis zum Flughafen",
+      "address": "Palma, Balearic Islands, Spain"
+    },
+    {
+      "title": "Palma de Mallorca Airport",
+      "description": "Eine wunderschöne Finca, 13 km (20 min) von Palma entfernt inmitten der Serra de Tramuntana gelegen, 23km (30 min) bis zum Flughafen",
+      "address": "Palma de Mallorca Airport, 07611 Palma, Balearic Islands, Spain"
+    }
+  ],
+  "puigpunyentHotels": [
+    {
+      "name": "Hotel Son Pont",
+      "price": "€€",
+      "distance": "3,1 km",
+      "image": "Finca Son Pont.jpg",
+      "url": "https://www.sonpont.com/de/index.html"
+    },
+    {
+      "name": "Hotel Son Net",
+      "price": "€€€",
+      "distance": "6,3 km",
+      "image": "Hotel Son Net.webp",
+      "url": "https://www.sonnet.es/de/"
+    },
+    {
+      "name": "Hotel Ratxo",
+      "price": "€€€",
+      "distance": "9,3 km",
+      "image": "Hotel Ratxo.jpg",
+      "url": "https://ratxo.com/de/"
+    }
+  ],
+  "palmaHotels": [
+    {
+      "name": "HM Jaime III",
+      "price": "€€",
+      "distance": "12,3 km",
+      "image": "HM Jamie.jpg",
+      "url": "https://www.hmjaimeiii.com/de/"
+    },
+    {
+      "name": "HM Balanguera",
+      "price": "€€",
+      "distance": "11,5 km",
+      "image": "Hotel Son Net.webp",
+      "url": "https://www.hmbalanguera.com/de/"
+    },
+    {
+      "name": "Hotel Saratoga",
+      "price": "€€",
+      "distance": "15,5 km",
+      "image": "Hotel Saratoga.jpg",
+      "url": "https://www.hotelsaratoga.com/de/"
+    },
+    {
+      "name": "Hotel Melia Palma Marina",
+      "price": "€€",
+      "distance": "13,5 km",
+      "image": "Hotel Son Net.webp",
+      "url": "https://www.melia.com/de/hotels/spanien/mallorca/melia-palma-marina/index.htm"
+    },
+    {
+      "name": "Hotel Hostal Cuba",
+      "price": "€€",
+      "distance": "12,6 km",
+      "image": "Hotel Hostal Cuba.jpg",
+      "url": "https://www.hotelhostalcuba.com/de/home.html"
+    },
+    {
+      "name": "Hotel Nakar",
+      "price": "€€",
+      "distance": "12,4 km",
+      "image": "Hotel Nakar Mallorca.jpg",
+      "url": "https://nakarhotel.com/de/"
+    },
+    {
+      "name": "Es Princep",
+      "price": "€€",
+      "distance": "13,5 km",
+      "image": "Es Princep Palma.jpg",
+      "url": "https://www.esprincep.com/de/zimmer"
+    },
+    {
+      "name": "Hotel Cort",
+      "price": "€€€",
+      "distance": "12,8 km",
+      "image": "Hotel Cort Palma.jpg",
+      "url": "https://hotelcort.com/de/"
+    },
+    {
+      "name": "Hotel Summum Prime Boutique Hotel",
+      "price": "€€€",
+      "distance": "12,3 km",
+      "image": "Hotel Son Net.webp",
+      "url": "https://de.hotelsummum.com/"
+    }
+  ]
+}

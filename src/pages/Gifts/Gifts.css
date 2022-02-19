@@ -1,0 +1,14 @@
+.gifts {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+}
+.gifts__subheader {
+  max-width: 800px;
+  text-transform: none !important;
+  padding: 0 1rem;
+}
+.gifts__content {
+  padding-top: 70vh;
+}

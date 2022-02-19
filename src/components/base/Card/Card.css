@@ -1,0 +1,40 @@
+.card {
+  width: 30vw;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-bottom: 100px;
+}
+.card__image {
+  width: auto;
+  height: 100%;
+  min-height: 700px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.25rem 1rem 0.25rem rgba(65, 65, 65, 0.25);
+  object-fit: cover;
+}
+.card__divider {
+  height: 2px;
+  width: 100%;
+  margin: 0 1rem;
+  background: var(--primary-colour);
+}
+.card:first-of-type {
+  margin-top: 10vh;
+}
+.card:nth-child(even) {
+  transform: translateY(40vh);
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 100%;
+    padding-bottom: none;
+    height: auto;
+  }
+  .card__image {
+    min-height: auto;
+  }
+  .card:nth-child(even) {
+    transform: translateY(0vh);
+  }
+}

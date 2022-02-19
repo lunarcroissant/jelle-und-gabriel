@@ -1,0 +1,24 @@
+.listSection {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.listSection__li {
+  list-style: none;
+  color: #aeae8b;
+}
+.listSection__liNumber {
+  color: #aeae8b;
+  opacity: 0.5;
+}
+.listSection__list {
+  max-width: 800px;
+}
+
+@media screen and (max-width: 450px) {
+  .listSection {
+    padding: 0 1rem;
+  }
+  .listSection__li {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,26 @@
+.listSection {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  &__li {
+    list-style: none;
+    color: #aeae8b;
+
+    &Number {
+      color: #aeae8b;
+      opacity: 0.5;
+    }
+  }
+
+  &__list {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .listSection {
+    padding: 0 1rem;
+    &__li {
+      font-size: 0.75rem;
+    }
+  }
+}

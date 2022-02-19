@@ -1,0 +1,24 @@
+.gifts {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+
+  &__subheader {
+    max-width: 800px;
+    text-transform: none !important;
+    padding: 0 1rem;
+  }
+
+  &__content {
+    padding-top: 70vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gifts {
+    &__subheader {
+      // text-align: left;
+    }
+  }
+}

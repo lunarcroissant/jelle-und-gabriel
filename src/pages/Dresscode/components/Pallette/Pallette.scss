@@ -1,0 +1,43 @@
+.pallette {
+  width: 30vw;
+  height: auto;
+  z-index: 5;
+
+  &__colourCircle {
+    border-radius: 100px;
+    width: 8vw;
+    height: 8vw;
+    display: flex;
+    flex-basis: 1;
+    flex-grow: 3;
+    margin: 0 0.5rem;
+  }
+
+  &__colourRect,
+  &__colourRectSmall {
+    width: 100%;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 3;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &Small {
+      height: 35vh;
+    }
+  }
+
+  &__colourRect {
+    height: 25vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .pallette {
+    width: 100%;
+    padding-bottom: 20vh;
+  }
+}

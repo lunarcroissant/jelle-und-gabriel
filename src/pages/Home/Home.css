@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+  .home__hotelTabs {
+    display: flex;
+    flex-direction: column;
+  }
+  .home__hotelTabs span {
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+  }
+}

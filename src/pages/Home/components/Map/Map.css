@@ -1,0 +1,18 @@
+.map {
+  background: white;
+  background-repeat: no-repeat;
+  background-size: auto 100vw;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+}
+.map__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}

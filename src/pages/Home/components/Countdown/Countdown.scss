@@ -1,0 +1,90 @@
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  backdrop-filter: blur(20px);
+  background: rgba(32, 32, 32, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 30px;
+
+  &__clock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: visible;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(40vmin);
+    font-weight: 200;
+  }
+
+  &__task {
+    // padding-bottom: 40vh;
+    font-size: 36px !important;
+    // font-size: 3vmax !important;
+    font-weight: 200;
+  }
+
+  &__cancel-button {
+    position: absolute;
+    bottom: 10vh;
+  }
+
+  // &__task_title {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   width: 400px;
+  //   text-align: center;
+  // }
+}
+
+.clock {
+  font-size: 300px;
+  position: relative;
+}
+
+.timer__task_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  text-align: center;
+  font-size: 30px !important;
+}
+
+.container {
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  // width: 0;
+  // position: relative;
+  // width: 100vw;
+  // height: 100vh;
+}

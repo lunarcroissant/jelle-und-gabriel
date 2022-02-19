@@ -1,0 +1,49 @@
+.anreise {
+  width: 100vw;
+  min-height: 100vh;
+
+  &__background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    padding: 0 5vw;
+    & > img {
+      width: 20vw;
+      height: auto;
+    }
+  }
+
+  &__leftBranch {
+    transform: rotate(-15deg);
+  }
+  &__rightBranch {
+    transform: rotate(15deg);
+  }
+
+  &__content {
+    margin-top: 15vh;
+  }
+}
+
+.fullheight {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .anreise {
+    &__background {
+      & > img {
+      }
+    }
+    &__leftBranch {
+      display: none;
+    }
+    &__rightBranch {
+      display: none;
+    }
+
+    &__content {
+      margin-top: 25vh;
+    }
+  }
+}

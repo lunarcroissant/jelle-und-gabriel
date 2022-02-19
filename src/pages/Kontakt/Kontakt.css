@@ -1,0 +1,38 @@
+.kontakt {
+  min-height: 100vh;
+}
+.kontakt__background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding: 0 5vw;
+}
+.kontakt__background > img {
+  width: 20vw;
+  height: auto;
+}
+.kontakt__leftBranch {
+  transform: rotate(-15deg);
+}
+.kontakt__rightBranch {
+  transform: rotate(15deg);
+}
+.kontakt__content {
+  margin-top: 15vh;
+}
+
+.fullheight {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .kontakt__leftBranch {
+    display: none;
+  }
+  .kontakt__rightBranch {
+    display: none;
+  }
+  .kontakt__content {
+    margin-top: 25vh;
+  }
+}
