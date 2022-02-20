@@ -33,7 +33,7 @@
   }
   .card__image {
     min-height: auto;
-    max-height: 400px;
+    max-height: 600px;
   }
 }
 @media screen and (max-width: 768px) {
