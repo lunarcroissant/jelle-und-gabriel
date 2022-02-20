@@ -33,6 +33,7 @@
   }
   .card__image {
     min-height: auto;
+    max-height: 400px;
   }
   .card:nth-child(even) {
     transform: translateY(0vh);
