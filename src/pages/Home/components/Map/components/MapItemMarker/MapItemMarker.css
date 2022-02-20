@@ -37,11 +37,43 @@
   top: 57%;
   right: 25%;
 }
-.mapItemPosition--4 {
-  top: 82%;
-  right: 9%;
+
+@media screen and (max-width: 768px) {
+  .mapItemMarker {
+    all: unset;
+    position: relative;
+    cursor: pointer;
+    transition: var(--cubic-transition);
+  }
+  .mapItemMarker svg {
+    max-height: 40px;
+    width: auto;
+  }
+  .mapItemMarker__number {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 10%;
+    font-size: 1rem;
+    color: white;
+  }
+  .mapItemMarker:hover {
+    transform: scale(1.1);
+  }
 }
-.mapItemPosition--5 {
-  top: 50%;
-  right: 50%;
+@media screen and (max-width: 450px) {
+  .mapItemPosition--1 {
+    top: 35%;
+    right: 45%;
+  }
+  .mapItemPosition--2 {
+    top: 40%;
+    right: 32%;
+  }
+  .mapItemPosition--3 {
+    top: 45%;
+    right: 22%;
+  }
 }
