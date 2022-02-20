@@ -1,5 +1,5 @@
 .card {
-  width: 30vw;
+  width: 100%;
   text-transform: uppercase;
   white-space: nowrap;
   padding-bottom: 100px;
@@ -35,6 +35,8 @@
     min-height: auto;
     max-height: 400px;
   }
+}
+@media screen and (max-width: 768px) {
   .card:nth-child(even) {
     transform: translateY(0vh);
   }

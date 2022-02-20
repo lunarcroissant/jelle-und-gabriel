@@ -11,7 +11,22 @@
   }
 }
 
-@media screen and (max-width: 1028px) {
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+  .cardsGrid {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 10;
+    // backdrop-filter: blur(1rem);
+
+    &:nth-child(odd) {
+      transform: translateY(10vh);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
   .cardsGrid {
     display: grid;
     grid-template-columns: 80vw;
@@ -25,18 +40,3 @@
     }
   }
 }
-
-// @media screen and (max-width: 1028px) {
-//   .cardsGrid {
-//     display: grid;
-//     grid-template-columns: 30vw 30vw;
-//     width: 100%;
-//     justify-content: space-around;
-//     z-index: 10;
-//     // backdrop-filter: blur(1rem);
-
-//     &:nth-child(odd) {
-//       transform: translateY(10vh);
-//     }
-//   }
-// }

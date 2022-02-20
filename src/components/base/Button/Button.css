@@ -31,7 +31,6 @@ svg:not(:root) {
 
 .btn-secondary {
   padding: 1rem 5rem;
-  flex: 1;
   border: 2px solid var(--primary-colour);
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;

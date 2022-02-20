@@ -17,8 +17,13 @@ const MapItemInfo = ({ data }: IProps) => {
       </Heading>
       <VerticalSpacing size="lg" />
       <div className="mapItemInfo__divider"></div>
-      <VerticalSpacing size="lg" />
-      <p>{description}</p>
+      {description ? (
+        <>
+          <VerticalSpacing size="lg" />
+          <p>{description}</p>
+        </>
+      ) : null}
+      {/* <p>{description}</p> */}
       <div className="mapItemInfo__contactInfo col justify-center align-center">
         <VerticalSpacing size="lg" />
         <p className="mapItemInfo__text">{address}</p>
