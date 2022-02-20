@@ -37,7 +37,6 @@ svg:not(:root) {
   font-size: 1.25rem;
   font-weight: var(--font--medium);
   color: var(--primary-colour);
-  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
