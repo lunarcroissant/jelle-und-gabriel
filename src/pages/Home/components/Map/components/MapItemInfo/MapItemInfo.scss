@@ -2,6 +2,7 @@
   position: absolute;
   left: 5vw;
   top: 5vh;
+  min-width: 400px;
   max-width: 400px;
   height: auto;
   backdrop-filter: blur(1.125rem);
@@ -28,6 +29,7 @@
   .mapItemInfo {
     position: unset;
     bottom: -100px;
+    min-width: 100%;
     max-width: 100%;
     height: auto;
     backdrop-filter: blur(1.125rem);
