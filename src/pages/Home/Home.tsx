@@ -108,9 +108,7 @@ const Home = () => {
 
   const [hotelFilter, setHotelFilter] = useState("palma");
 
-  useEffect(() => {
-    console.log(hotelFilter);
-  }, [hotelFilter]);
+  useEffect(() => {}, [hotelFilter]);
 
   useEffect(() => {
     document.documentElement.scrollTop = 0;

@@ -41,16 +41,18 @@ const ListSection = ({
                 ) : null}
                 {item.linkURL ? (
                   <li className="listSection__li" id={item.text}>
-                    <a href={`mailto:${item.linkURL}`}>{item.text}</a>
+                    <a
+                      className="listSection__li"
+                      href={`mailto:${item.linkURL}`}
+                    >
+                      {item.text}
+                    </a>
                   </li>
                 ) : (
                   <li className="listSection__li" id={item.text}>
                     <Text text={item.text} textSize={TextSize.sm}></Text>
                   </li>
                 )}
-                {/* <li className="listSection__li" id={item.text}>
-                  {item}
-                </li> */}
                 <VerticalSpacing size="md" />
               </>
             );
