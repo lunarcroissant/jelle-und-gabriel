@@ -20,11 +20,11 @@ const Footer = ({ isMobile }: IProps) => {
 
       <Icon icon="olive-branch-left" size="xxl" />
       <div className="col align-center justify-center">
-        <p className="footer__text">+49 5847 43392</p>
+        <p className="footer__text">+49 176 61 38 40 59</p>
         <VerticalSpacing size="sm" />
         <p className="footer__text">jelenaundgabriel@gmail.com</p>
         <VerticalSpacing size="sm" />
-        <p className="footer__text">Leonrodstraße 39, 80636, München</p>
+        <p className="footer__text">Marschnerstraße 31, 81245, München</p>
       </div>
       <Icon icon="olive-branch-right" size="xxl" />
     </footer>

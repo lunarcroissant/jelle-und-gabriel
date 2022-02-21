@@ -16,6 +16,10 @@ import Dresscode from "./pages/Dresscode/Dresscode";
 
 const navigationData = [
   {
+    label: "Home",
+    urlPath: "/",
+  },
+  {
     label: "Anreise",
     urlPath: "/anreise",
   },
