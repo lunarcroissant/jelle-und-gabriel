@@ -13,11 +13,11 @@ const Agenda = ({ data }: IProps) => {
     <>
       <section className="col align-center justify-center agenda">
         <div className="full-width row justify-center align-center agenda__titel">
-          <Heading type="h2">Agenda</Heading>
+          <Heading type="h2">Ablauf</Heading>
         </div>
 
         <div className="agenda__layout row justify-center align-center">
-          <AgendaItem time="16:30" heading="Trauung" icon="icon-rings" />
+          <AgendaItem time="16:45" heading="Trauung" icon="icon-rings" />
           <VerticalDivider />
           <AgendaItem time="17:15" heading="Sektempfang" icon="icon-cheers" />
           <VerticalDivider />
