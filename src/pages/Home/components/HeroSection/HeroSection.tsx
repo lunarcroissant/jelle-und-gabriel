@@ -10,7 +10,7 @@ interface IProps {
 }
 
 const HeroSection = ({ linkLabels }: IProps) => {
-  const weddingDate = new Date("Jul 17, 2022 00:00:00").getTime();
+  const weddingDate = new Date("Jul 17, 2022 15:45:00").getTime();
 
   const [day, setDay] = useState(0);
   const [hour, setHour] = useState(0);
