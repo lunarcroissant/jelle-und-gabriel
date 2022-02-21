@@ -72,6 +72,8 @@ const Anreise: FC = () => {
           <Button
             text="Route ansehen"
             buttonVariant={ButtonType.secondaryLight}
+            href="https://www.google.com/maps?f=d&saddr=Palma,+Balearic+Islands,+Spain&daddr=Carretera+Palma+Puigpunyent,+km+10,+8,+07194+Puigpunyent,+Balearic+Islands,+Spain&dirflg=d"
+            openInNewTab
           />
           <VerticalSpacing size="xxl" />
         </div>

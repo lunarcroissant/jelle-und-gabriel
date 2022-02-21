@@ -13,9 +13,10 @@ interface IProps {
   buttonVariant: ButtonType;
   text: string;
   href?: string;
+  openInNewTab?: boolean;
 }
 
-const Button = ({ buttonVariant, text, href }: IProps) => {
+const Button = ({ buttonVariant, text, href, openInNewTab }: IProps) => {
   if (buttonVariant === ButtonType.primary) {
     return <button className={`btn ${buttonVariant}`}>{text}</button>;
   }
@@ -30,7 +31,11 @@ const Button = ({ buttonVariant, text, href }: IProps) => {
 
   if (buttonVariant === ButtonType.secondaryLight) {
     return (
-      <a className="btn btn-secondary btn-secondary--light" href={href}>
+      <a
+        className="btn btn-secondary btn-secondary--light"
+        href={href}
+        target={openInNewTab ? "_blank" : "_self"}
+      >
         {text}
       </a>
     );
