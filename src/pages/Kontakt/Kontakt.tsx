@@ -57,6 +57,11 @@ const Kontakt = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   });
+
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, []);
+
   return (
     <div className="fullheight">
       <div className="kontakt__background row align-center justify-between">

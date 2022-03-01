@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useEffect } from "react";
 import Button, { ButtonType } from "../../components/base/Button/Button";
 import Heading from "../../components/base/Heading/Heading";
 import Text, { TextSize } from "../../components/base/Text/Text";
@@ -17,6 +17,10 @@ const menuData = [
 ];
 
 const Menu = () => {
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, []);
+
   return (
     <div className="fullheight">
       <div className="menu__background row align-center justify-between">
