@@ -3,7 +3,6 @@
   width: 100vw;
   position: fixed;
   z-index: 1;
-  animation: fadeInAfterDelay 10000ms ease-in-out;
 }
 .heroSection__content {
   position: relative;
@@ -21,6 +20,9 @@
   opacity: 0;
   font-family: "Montserrat", sans-serif;
   animation: heroTimer 6500ms forwards 300ms ease-in-out;
+}
+.heroSection--animated {
+  animation: fadeInAfterDelay 10000ms ease-in-out;
 }
 
 .heroSection__bottomBranch,

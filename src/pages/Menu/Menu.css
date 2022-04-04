@@ -19,6 +19,7 @@
 }
 .menu__content {
   margin-top: 15vh;
+  max-width: 800px;
 }
 
 .fullheight {

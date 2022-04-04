@@ -18,6 +18,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import Map from "./components/Map/Map";
 import CheckboxItem from "../../components/base/CheckboxItem/CheckboxItem";
 import "./Home.css";
+import useStickyStorage from "../../hooks/useStickyStorage/useStickyStorage";
 
 const testCard = [
   {

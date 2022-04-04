@@ -13,7 +13,7 @@ interface IProps {
   }[];
   isInstruction?: boolean;
   isLink?: boolean;
-  listHeading: string;
+  listHeading: string | null;
 }
 
 const ListSection = ({
@@ -24,7 +24,7 @@ const ListSection = ({
 }: IProps) => {
   return (
     <div className="listSection col justify-center align-center center-text">
-      <Heading type="h3">{listHeading}</Heading>
+      {listHeading ? <Heading type="h3">{listHeading}</Heading> : null}
       <VerticalSpacing size="lg" />
       <ul className="listSection__list">
         {listItems &&

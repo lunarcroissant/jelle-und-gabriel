@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Heading from "../../../../components/base/Heading/Heading";
 import Text, { TextSize } from "../../../../components/base/Text/Text";
 import Header from "../../../../components/global/Header/Header";
+import useStickyStorage from "../../../../hooks/useStickyStorage/useStickyStorage";
 
 import "./HeroSection.css";
 
@@ -44,8 +45,21 @@ const HeroSection = ({ linkLabels }: IProps) => {
       document.body.scrollTop || document.documentElement.scrollTop;
     const percentageVerticalOffset = window.innerHeight;
 
+    console.log(verticalOffset);
+
     setBlur(`${(verticalOffset / percentageVerticalOffset) * 7}px`);
   };
+
+  useEffect(() => {
+    window.localStorage.setItem("visited", "visitorStatus");
+  });
+
+  const hasVisited = window.localStorage.getItem("visitorStatus");
+
+  const [visitorStatus, setVisitorStatus] = useStickyStorage(
+    "visited",
+    "visitorStatus"
+  );
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -58,7 +72,8 @@ const HeroSection = ({ linkLabels }: IProps) => {
   return (
     <>
       <section
-        className="heroSection col align-center justify-center"
+        className={`heroSection col align-center justify-center heroSection--animated
+        `}
         id="heroSection"
         onScroll={(e: any) => handleScroll(e)}
         style={{ filter: `blur(${blur})` }}
