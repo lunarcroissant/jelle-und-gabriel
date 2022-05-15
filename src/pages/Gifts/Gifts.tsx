@@ -121,84 +121,42 @@ const Gifts = () => {
       >
         <Heading type="h1">WÜNSCHE</Heading>
         <VerticalSpacing size="lg" />
-        {!isMobile ? (
-          <div className="col align-center justify-center width-100 center-text gifts__subheader">
-            <Text
-              theme="primary-colour"
-              text="Das größte Geschenk ist, dass ihr gemeinsam mit uns unsere Hochzeit feiert! Wer uns noch etwas schenken möchte, würde uns mit einer Beteiligung an unserer Hochzeitsreise eine große Freude bereiten. Wir möchten einen zweiwöchigen Roadtrip an der US-Westküste machen und anschließend ein paar Tage am türkisblauen Meer verbringen. Um das ganze etwas persönlicher zu machen, findet ihr unter diesem Text ein paar unserer geplanten Reisestationen. Fall ihr uns bei einer dieser Stationen unterstützen wollt, meldet euch gerne bei Leon und Marlene. Wir freuen uns aber natürlich auch über eure eigenen Ideen und Überraschungen. Wer Hilfe hierbei benötigt, kann sich auch gerne an Leon und Marlene wenden."
-              textSize={TextSize.sm}
-            ></Text>
-            <VerticalSpacing size="md" />
-            <div className="col">
-              <Text
-                theme="primary-colour"
-                text="Handy Leon: +49 157 555 44 287"
-                textSize={TextSize.sm}
-              />
-              <VerticalSpacing size="sm" />
-              <Text
-                theme="primary-colour"
-                text="Handy Marlene: +44 743 2600 478"
-                textSize={TextSize.sm}
-              />
-              <VerticalSpacing size="sm" />
-              <Text
-                theme="primary-colour"
-                text="Email: trauzeugen.jelenaundgabriel@gmail.com"
-                textSize={TextSize.sm}
-              />
-              {/* <VerticalSpacing size="md" />
-              <Button
-                buttonVariant={ButtonType.secondaryLight}
-                text="Email an die Trauzeugen"
-                href="mailto:trauzeugen.jelenaundgabriel@gmail.com"
-              /> */}
-              {isMobile ? <VerticalSpacing size="xxl" /> : null}
-            </div>
-          </div>
-        ) : null}
       </section>
       <div className="gifts__content">
-        {isMobile ? (
-          <div className="col align-center justify-center width-100 center-text gifts__subheader">
+        <div className="col align-center justify-center width-100 center-text gifts__subheader">
+          <Text
+            theme="primary-colour"
+            text="Das größte Geschenk ist, dass ihr gemeinsam mit uns unsere Hochzeit feiert! Wer uns noch etwas schenken möchte, würde uns mit einer Beteiligung an unserer Hochzeitsreise eine große Freude bereiten. Wir möchten einen zweiwöchigen Roadtrip an der US-Westküste machen und anschließend ein paar Tage am türkisblauen Meer verbringen. Um das ganze etwas persönlicher zu machen, findet ihr unter diesem Text ein paar unserer geplanten Reisestationen. Fall ihr uns bei einer dieser Stationen unterstützen wollt, meldet euch gerne bei Leon und Marlene. Wir freuen uns aber natürlich auch über eure eigenen Ideen und Überraschungen. Wer Hilfe hierbei benötigt, kann sich auch gerne an Leon und Marlene wenden."
+            textSize={TextSize.sm}
+          ></Text>
+          <VerticalSpacing size="md" />
+          <div className="col">
             <Text
               theme="primary-colour"
-              text="Das größte Geschenk ist, dass ihr gemeinsam mit uns unsere Hochzeit feiert! Wer uns noch etwas schenken möchte, würde uns mit einer Beteiligung an unserer Hochzeitsreise eine große Freude bereiten. Wir möchten einen zweiwöchigen Roadtrip an der US-Westküste machen und anschließend ein paar Tage am türkisblauen Meer verbringen. Um das ganze etwas persönlicher zu machen, findet ihr unter diesem Text ein paar unserer geplanten Reisestationen. Fall ihr uns bei einer dieser Stationen unterstützen wollt, meldet euch gerne bei Leon und Marlene. Wir freuen uns aber natürlich auch über eure eigenen Ideen und Überraschungen. Wer Hilfe hierbei benötigt, kann sich auch gerne an Leon und Marlene wenden."
+              text="Handy Leon (+49 157 555 44 287)"
               textSize={TextSize.sm}
-            ></Text>
+            />
+            <VerticalSpacing size="sm" />
+            <Text
+              theme="primary-colour"
+              text="Handy Marlene (+44 743 2600 478)"
+              textSize={TextSize.sm}
+            />
             <VerticalSpacing size="md" />
-            <div className="col">
-              <Text
-                theme="primary-colour"
-                text="Handy Leon (+49 157 555 44 287)"
-                textSize={TextSize.sm}
-              />
-              <VerticalSpacing size="sm" />
-              <Text
-                theme="primary-colour"
-                text="Handy Marlene (+44 743 2600 478)"
-                textSize={TextSize.sm}
-              />
-              <VerticalSpacing size="md" />
-              <Button
-                buttonVariant={ButtonType.secondaryLight}
-                text="E-Mail schreiben"
-                href="mailto:trauzeugen.jelenaundgabriel@gmail.com"
-              />
-            </div>
+            <Button
+              buttonVariant={ButtonType.secondaryLight}
+              text="E-Mail schreiben"
+              href="mailto:trauzeugen.jelenaundgabriel@gmail.com"
+            />
           </div>
-        ) : null}
+        </div>
         <CardsGrid data={testCard} />
       </div>
       <VerticalSpacing size="xxl" />
       {isMobile ? null : <VerticalSpacing size="xxl" />}
-
       <Footer />
     </>
   );
 };
 
 export default memo(Gifts);
-function useViewPortSize() {
-  throw new Error("Function not implemented.");
-}

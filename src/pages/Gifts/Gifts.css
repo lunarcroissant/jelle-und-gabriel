@@ -3,25 +3,27 @@
   width: 100vw;
   position: fixed;
   z-index: -1;
-  margin-top: 100px;
 }
 .gifts__subheader {
-  max-width: 800px;
   text-transform: none !important;
   padding: 0 1rem;
 }
+.gifts__subheader p {
+  max-width: 70vw;
+}
 .gifts__content {
-  transform: translateY(700px);
+  transform: translateY(600px);
   padding-bottom: 700px;
 }
 
 @media screen and (max-width: 768px) {
   .gifts {
     min-height: 50vh;
+    margin-top: 100px;
   }
   .gifts__content {
     transform: translateY(20vh);
-    padding-top: 40vh;
+    padding-top: 250px;
     padding-bottom: 500px;
   }
 }
