@@ -35,13 +35,17 @@ const Card = ({
             textSize={TextSize.md}
             weight={TextWeight.medium}
           />
-          <div className="card__divider"></div>
-          <Text
-            text={subText}
-            theme="primary-colour"
-            textSize={TextSize.md}
-            weight={TextWeight.medium}
-          />
+          {subText ? (
+            <>
+              <div className="card__divider"></div>
+              <Text
+                text={subText}
+                theme="primary-colour"
+                textSize={TextSize.md}
+                weight={TextWeight.medium}
+              />
+            </>
+          ) : null}
         </div>
       ) : null}
 

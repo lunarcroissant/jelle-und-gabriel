@@ -17,8 +17,14 @@
 
 @media screen and (max-width: 768px) {
   .gifts {
+    height: auto;
+    padding-top: 200px;
     &__subheader {
       // text-align: left;
+    }
+
+    &__content {
+      padding-top: 40vh;
     }
   }
 }
