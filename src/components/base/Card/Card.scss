@@ -23,6 +23,11 @@
     background: var(--primary-colour);
   }
 
+
+  p {
+    white-space: pre-wrap;
+  }
+
   &:first-of-type {
     margin-top: 10vh;
   }

@@ -19,6 +19,9 @@
   margin: 0 1rem;
   background: var(--primary-colour);
 }
+.card p {
+  white-space: pre-wrap;
+}
 .card:first-of-type {
   margin-top: 10vh;
 }
