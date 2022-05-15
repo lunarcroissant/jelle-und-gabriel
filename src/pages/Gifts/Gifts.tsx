@@ -15,7 +15,7 @@ interface IProps {
 
 const testCard = [
   {
-    text: "Flug, DE – USA",
+    text: "Flug in die USA",
     imageSource: "gifts/USA.jpg",
     subText: null,
     button: false,
@@ -78,7 +78,7 @@ const testCard = [
     buttonText: null,
   },
   {
-    text: "Rückflug, USA – DE",
+    text: "Rückflug nach Deutschland",
     imageSource: "gifts/flight.jpeg",
     subText: null,
     button: false,
@@ -132,21 +132,27 @@ const Gifts = () => {
             <div className="col">
               <Text
                 theme="primary-colour"
-                text="Handy Leon (+49 157 555 44 287)"
+                text="Handy Leon: +49 157 555 44 287"
                 textSize={TextSize.sm}
               />
               <VerticalSpacing size="sm" />
               <Text
                 theme="primary-colour"
-                text="Handy Marlene (+44 743 2600 478)"
+                text="Handy Marlene: +44 743 2600 478"
                 textSize={TextSize.sm}
               />
-              <VerticalSpacing size="md" />
+              <VerticalSpacing size="sm" />
+              <Text
+                theme="primary-colour"
+                text="Email: trauzeugen.jelenaundgabriel@gmail.com"
+                textSize={TextSize.sm}
+              />
+              {/* <VerticalSpacing size="md" />
               <Button
                 buttonVariant={ButtonType.secondaryLight}
                 text="Email an die Trauzeugen"
                 href="mailto:trauzeugen.jelenaundgabriel@gmail.com"
-              />
+              /> */}
               {isMobile ? <VerticalSpacing size="xxl" /> : null}
             </div>
           </div>

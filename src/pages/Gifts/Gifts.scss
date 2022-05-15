@@ -1,31 +1,38 @@
 .gifts {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   position: fixed;
   z-index: -1;
+  margin-top: 100px;
 
   &__subheader {
     max-width: 800px;
     text-transform: none !important;
     padding: 0 1rem;
+    
   }
 
   &__content {
     // padding-top: 70vh;
-    padding-top: 700px;
+    // padding-top: 700px;
+    transform: translateY(700px);
+    padding-bottom: 700px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .gifts {
-    height: auto;
-    padding-top: 200px;
+    min-height: 50vh;
+    
+    // padding-top: 200px;
     &__subheader {
       // text-align: left;
     }
 
     &__content {
+      transform: translateY(20vh);
       padding-top: 40vh;
+      padding-bottom: 500px;
     }
   }
 }
