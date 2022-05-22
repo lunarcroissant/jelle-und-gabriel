@@ -108,7 +108,7 @@ const Dresscode = () => {
       >
         <Heading type="h1">Dresscode</Heading>
         <VerticalSpacing size="lg" />
-        <div className="row align-center justify-center width-100 center-text dresscode__subheader">
+        <div className="col align-center justify-center width-100 center-text dresscode__subheader">
           <Text
             theme="primary-colour"
             text="Liebe Gäste, wir würden uns wünschen, dass ihr zu unserer Hochzeit in hellen und gedeckten
@@ -116,6 +116,12 @@ Farben kommt. Bitte bedenkt, dass die Tage sehr heiß werden, die Nächte aber g
 Bergen frisch sein können. Hier findet ihr ein paar Bilder und Farben, von denen ihr euch inspirieren lassen könnt."
             textSize={TextSize.sm}
           ></Text>
+          <VerticalSpacing size="sm" />
+          <Text
+            theme="primary-colour"
+            text="Ein kleiner Hinweis: die Zeremonie und das Dinner werden auf Rasen stattfinden."
+            textSize={TextSize.sm}
+          />
         </div>
       </section>
       <div className="dresscode__content">
