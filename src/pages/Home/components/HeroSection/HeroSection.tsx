@@ -85,10 +85,15 @@ const HeroSection = ({ linkLabels }: IProps) => {
         />
         <div className="col heroSection__content">
           <span className="width-100 heroSection__smallClock">
-            <Text
+            {/* <Text
               text={`${day}:${hour >= 10 ? hour : `0${hour}`}:${
                 minute >= 10 ? minute : `0${minute}`
               }:${second >= 10 ? second : `0${second}`}`}
+              textSize={TextSize.md}
+              theme="primary-colour"
+            /> */}
+            <Text
+              text="Wir haben geheiratet!"
               textSize={TextSize.md}
               theme="primary-colour"
             />
@@ -111,9 +116,10 @@ const HeroSection = ({ linkLabels }: IProps) => {
       </section>
       {day || hour || minute || second ? (
         <div className="heroSection__timer">
-          {`${day}:${hour >= 10 ? hour : `0${hour}`}:${
+          16.07.22
+          {/* {`${day}:${hour >= 10 ? hour : `0${hour}`}:${
             minute >= 10 ? minute : `0${minute}`
-          }:${second >= 10 ? second : `0${second}`}`}
+          }:${second >= 10 ? second : `0${second}`}`} */}
         </div>
       ) : null}
     </>
