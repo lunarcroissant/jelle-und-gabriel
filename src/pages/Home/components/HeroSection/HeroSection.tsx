@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Button, { ButtonType } from "../../../../components/base/Button/Button";
 import Heading from "../../../../components/base/Heading/Heading";
 import Text, { TextSize } from "../../../../components/base/Text/Text";
 import Header from "../../../../components/global/Header/Header";
@@ -108,6 +109,11 @@ const HeroSection = ({ linkLabels }: IProps) => {
             />
           </div>
         </div>
+        <Button
+          buttonVariant={ButtonType.primaryLink}
+          text="Zu den Bildern"
+          href="https://www.dropbox.com/scl/fo/6k6rjroz955see6l510q7/h?dl=0&rlkey=0129ynnzx5m7bgo9mgm5xambp"
+        />
         <img
           src={`${process.env.PUBLIC_URL}/assets/OliveBranch.png`}
           alt=""
